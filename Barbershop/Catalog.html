@@ -16,10 +16,27 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <img src="img\login.svg" width="14" height="14" alt="login">
-      <ul class="user-login">
-        <li>Вход</li>
-        <!--форма-->
-      </ul>
+      <section>
+         <h2>Вход</h2>
+         <p>Введите пожалуйста свой логин и пароль</p>
+         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+         <p>
+            <label for="user-login-cite visually-hidding" >Логин</label>
+            <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
+         </p>
+         <p>
+            <label for="user-password-cite visually-hidding" >Пароль</label>
+            <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
+          </p>
+          <p>
+            <label class="user-login-remember">
+            <input class="visually-hidding" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
+            Запомни меня</label>
+            <a href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button-login" type="submit" name="Войти">Войти</button>
+        </form>
+      </section>
     </nav>
     </header>
     <main class="container">
@@ -29,14 +46,64 @@
           <li><a href="#">Магазин</a></li>
           <li class="breadcrumbs-current">Средства по уходу</li>
         </ul>
-      <section>
+      <section class="filter">
         <h2 class="visually-hidding">Фильтры</h2>
-        <b>Производители</b>
-        <!--форма-->
-        <b>Группы товаров:</b>
-        <!--forma-->
-        <span class="button-filters">Показать</span>
-      </section>
+        <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+        <Legend>Производители</Legend>
+        <ul class="filter-list">
+          <li class="filter-options">
+             <label for="Baxter">
+             <input class="visually-hidding" id="Baxter" type="checkbox" name="Baxter of California" checked>
+             Baxter of California</label>
+          </li>
+          <li class="filter-options">
+            <label for="mr">
+            <input class="visually-hidding" id="mr" type="checkbox" name="Mr Natty">
+            MR NATTY</label>
+          </li>
+          <li class="filter-options">
+            <label for="Suavecito">
+            <input class="visually-hidding" id="Suavecito" type="checkbox" name="SUAVECITO" checked>
+            SUAVECITO</label>
+          </li>
+          <li class="filter-options">
+            <label for="Malin">
+            <input class="visually-hidding" id="Malin" type="checkbox" name="Malin+Goetz">
+            Malin+Goetz</label>
+          </li>
+          <li class="filter-options">
+            <label for="MURRAY">
+            <input class="visually-hidding" id="MURRAY" type="checkbox" name="MURRAY'S">
+            MURRAY'S</label>
+          </li>
+          <li class="filter-options">
+            <label for="American">
+            <input class="visually-hidding" id="American" type="checkbox" name="American CREW" checked>
+            American CREW</label>
+          </li>
+        </ul>
+      </fildset>
+      <fieldset>
+        <Legend>Группы товаров:</legend>
+          <ul>
+            <li>
+              <input id="filter-shave" class="visually-hidding filter-input filter-input-radio" type="radio" name="product-gruop" value="shaving">
+             <label for="filter-shave">Бритвенные принадлежности</label>
+           </li>
+           <li>
+             <input id="filter-care" class="visually-hidding filter-input filter-input-radio" type="radio" name="product-gruop" value="care-product">
+            <label for="filter-care">Средства для ухода</label>
+           </li>
+           <li>
+             <input id="filter-accessories" class="visually-hidding filter-input filter-input-radio" type="radio" name="product-gruop" value="accessories">
+            <label for="filter-accessories">Средства для ухода</label>
+           </li>
+          </ul>
+          <button class="button filter-button" type="button" name="show">Показать</button>
+      </fieldset>
+    </form>
+   </section>
       <section>
         <h2 class="visually-hidding">Список товаров</h2>
         <ul class="catalog-list">
@@ -152,12 +219,6 @@
         <b>Разработано:</b>
         <a href="https://htmlacademy.ru/">HTML Academy</a>
       </footer>
-      <section class="login-user">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <!--форма-->
-        <span>x</span>
-      </section>
       <section>
         <h2>Как до нас добраться</h2>
         <span>x</span>
