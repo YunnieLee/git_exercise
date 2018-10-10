@@ -16,10 +16,27 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <img src="img\login.svg" width="14" height="14" alt="login">
-      <ul class="user-login">
-        <li>Вход</li>
-        <!--форма-->
-      </ul>
+      <section>
+         <h2>Вход</h2>
+         <p>Введите пожалуйста свой логин и пароль</p>
+         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+         <p>
+            <label for="user-login-cite visually-hidding" >Логин</label>
+            <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
+         </p>
+         <p>
+            <label for="user-password-cite visually-hidding" >Пароль</label>
+            <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
+          </p>
+          <p>
+            <label class="user-login-remember">
+            <input class="visually-hidding" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
+            Запомни меня</label>
+            <a href="#">Я забыл пароль!</a>
+          </p>
+          <button class="button-login" type="submit" name="Войти">Войти</button>
+        </form>
+      </section>
     </nav>
    </header>
     <main class="container">
@@ -60,8 +77,8 @@
         <figure class="gallery-content">
           <a href="#"><img src="img\Layer 21.jpg" width="286" height="164" alt="Интерьер"></a>
         </figure>
-        <span class="button-gallery">Назад</span>
-        <span class="button-gallery">Вперед</span>
+        <button type="button" name="feedback">Назад</button>
+        <button type="button" name="next">Вперед</button>
       </section>
       <section class="contacts">
         <h2>Контактная информация</h2>
@@ -81,10 +98,28 @@
         <a class="button-map" href="#">Как проехать</a>
         <a class="button-feedback" href="#">Обратная связь</a>
       </section>
-      <section>
+      <section class="appointment">
         <h2>Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!--форма-->
+        <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <p class="appointment-item">
+          <label for="data" class="visually-hidding">Дата</label>
+          <input id="data" type="text" name="01.03.2018" placeholder="Дата">
+        </p>
+        <p class="appointment-item">
+          <label for="time" class="visually-hidding">Время</label>
+          <input id="time" type="text" name="Время" placeholder="12:00">
+        </p>
+        <p class="appointment-item">
+          <label for="user-name" class="visually-hidding">Ваше имя</label>
+          <input id="user-name" type="text" name="user-name" placeholder="Ваше имя">
+        </p>
+        <p class="appointment-item">
+          <label for="phone" class="visually-hidding">Телефон</label>
+          <input id="phone" type="text" name="phone" placeholder="7-916-123-45-67">
+        </p>
+        <button class="button" type="submit" name="button">Отправить</button>
+        </form>
       </section>
       <footer class="mine-footer">
         <p>Барбершоп «Бородинский» <br>
@@ -103,18 +138,11 @@
         <b>Разработано:</b>
         <a href="https://htmlacademy.ru/">HTML Academy</a>
       </footer>
-      <section class="login-user">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <!--форма-->
-        <span>x</span>
       </section>
       <section>
         <h2>Как до нас добраться</h2>
         <span>x</span>
-
       </section>
     </main>
-
   </body>
 </html>
