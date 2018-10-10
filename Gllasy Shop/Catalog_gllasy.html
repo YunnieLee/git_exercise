@@ -17,7 +17,7 @@
          <img src="img\serch.svg" alt="Поиск">
          <a class="navigation-user" href="#">Вход</a>
          <div>
-             <a class="navigation-user-bay" href="#"><img src="img\basket.svg" alt="Корзина"> Корзина</a>
+             <a class="navigation-user-bay" href="#"><img src="img\basket.svg" alt="Корзина"> 2 товара</a>
                <ul class="bassket-list">
                   <li class="basket-item">
                      <p>
@@ -52,39 +52,58 @@
         <li class="breadcrumbs-current">Сливочное</li>
       </ul>
       <section class="filters">
-        <h2 class="visually-hidding">Фильтры</h2>
-        <p>Сортировка</p>
-        <!--форма-->
-        <p>Цена</p>
-        <!--форма-->
-        <p>Жирность</p>
-        <!--форма-->
-        <p>Наполнители</p>
-        <!--форма-->
-        <span class="button-filters"></span>
+         <h2 class="visually-hidding">Фильтры</h2>
+         <p>
+            Сортировка:
+            <select class="visually-hidding" name="сортировка[]">
+               <option value="по популярности" >по популярности</option>
+               <option value="сначала недорогие">сначала недорогие</option>
+               <option value="сначала дорогие">сначала дорогие</option>
+               <option value="по жирности">по жирности</option>
+            </select>
+         </p>
+         <div class="filter-price">
+             <span class="filter-title">Цена: 100 руб. – 500 руб.</span>
+             <div class="price-controls filter-controls">
+                <div class="range-scale">
+                    <div class="range-bar"></div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                 </div>
+             </div>
+         </div>
+         <fieldset class="filter-fat">
+            <legend>Жирность</legend>
+            <p>
+              <input class="visually-hidding" type="radio" name="fat" value="0">0%
+              <input class="visually-hidding" type="radio" name="fat" value="10" checked>10%
+              <input class="visually-hidding" type="radio" name="fat" value="30">30%
+              <input class="visually-hidding" type="radio" name="fat" value=">30">выше 30%
+            </p>
+         </fieldset>
+         <fieldset class="filter-filler">
+           <legend>Наполнители</legend>
+              <input type="checkbox" name="chokolad" value="шоколадные" checked> шоколадные
+              <input type="checkbox" name="sugar" value="сахарные" checked> сахарные присыпки
+              <input type="checkbox" name="fruit" value="фруктовые"> фрукты
+              <input type="checkbox" name="syrup" value="сиропы"> сиропы
+              <input type="checkbox" name="jam" value="джемы"> джемы
+         </fieldset>
+        <button class="button button-filler" type="button" name="filters">Применить</button>
       </section>
       <section>
         <h2 visually-hidding>Список товаров</h2>
         <ul class="product-list">
           <li class="product-item">
-            <h3>
-            <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            </h3>
-            <p>
-              <img src="img\cream_ic.jpg" widht="200" height="200" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-            </p>
-            <b>310p</b>
-            <span>/кг</span>
-          </li>
           <li class="product-item">
-            <h3>
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-            </h3>
-            <p>
-              <img src="img\coffee_ic.jpg" widht="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
-            </p>
-            <b>380p</b>
-            <span>/кг</span>
+             <h3>
+                <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+             </h3>
+             <p>
+                 <img src="img\coffee_ic.jpg" widht="200" height="200" alt="Сливочно-кофейное с кусочками шоколада">
+             </p>
+             <b>380p</b>
+             <span>/кг</span>
           </li>
           <li class="product-item">
             <h3>
