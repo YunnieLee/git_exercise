@@ -27,8 +27,9 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
        </ul>
-       <input class="serch" type="search" name="serch" value="поиск">
-       <img src="img\serch.svg" alt="Поиск">
+       <label сlass="visually-hidding" for="search">Поиск</label>
+       <input id="search" class="search" type="search" name="search" placeholder="Поиск">
+       <img src="img\search.svg" alt="Поиск">
        <a class="navigation-user" href="#">Вход</a>
        <a class="navigation-user-bay" href="#"><img src="img\basket.svg" alt="Корзина"> Корзина</a>
     </nav>
@@ -201,11 +202,15 @@
            <a href="https://htmlacademy.ru/">HTML Academy</a> 2017
        </p>
     </footer>
-    <section class="login-user">
-       <h2>Личный кабинет</h2>
-       <p>Введите свой логин и пароль.</p>
-      <!--форма-->
-      <span>x</span>
+    <section class="login-cite">
+       <h2 class="visually-hidding">Личный кабинет</h2>
+       <label class="visually-hidding" for="login-mail">Электронная почта</label>
+       <input id="login-mail" class="input-login-mail" type="text" name="mail" placeholder="Электронная почта">
+       <label class="visually-hidding" for="login-cite-password">Пароль</label>
+       <input id="login-cite-password" class="input-login-password" type="password" name="password" placeholder="Пароль">
+       <a href="#" alt="Забыли пароль?">Забыли пароль?</a>
+       <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+       <button class="button button-login" type="button" name="Вход">Войти</button>
     </section>
     <section>
         <form class="Feedback" action="https://echo.htmlacademy.ru" method="get">
