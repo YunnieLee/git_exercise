@@ -12,11 +12,34 @@
             <li> <a href="#">Каталог</a></li>
             <li> <a href="#">Доставка и оплата</a></li>
             <li> <a href="#">О компании</a></li>
-        </ul>
-        <input class="serch" type="search" name="serch" value="поиск">
-        <img src="img\serch.svg" alt="Поиск">
-        <a class="navigation-user" href="#">Вход</a>
-        <a class="navigation-user-bay" href="#"><img src="img\basket.svg" alt="Корзина"> Корзина</a>
+         </ul>
+         <input class="serch" type="search" name="serch" value="поиск">
+         <img src="img\serch.svg" alt="Поиск">
+         <a class="navigation-user" href="#">Вход</a>
+         <div>
+             <a class="navigation-user-bay" href="#"><img src="img\basket.svg" alt="Корзина"> Корзина</a>
+               <ul class="bassket-list">
+                  <li class="basket-item">
+                     <p>
+                         <img src="img\cream_ic.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                         Пломбир с апельсиновым джемом 1.5кг х 200  300 руб.
+                     </p>
+                     <button class="button button-close visually-hidding" type="button" alt="удалить продукт" name="delete">Удалить продукт</button>
+                  </li>
+                  <li class="basket-item">
+                     <p>
+                        <img src="img\strawberry_ic.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                        Клубничный пломбир с присыпкой из белого шоколада 1.5кг х 300  450 руб.
+                     </p>
+                     <button class="button button-close visually-hidding" type="button" alt="удалить продукт" name="delete">Удалить продукт</button>
+                  </li>
+                </ul>
+              <hr>
+                <div class="summa">
+                     <b>Итого: 750 руб.</b>
+                </div>
+              <button class="button button-basket" type="button" name="bey">Оформить заказ</button>
+          </div>
       </nav>
       <p>C 10 до 20, ежедневно</p>
       <p>8 812 450-25-25</p>
@@ -220,25 +243,27 @@
         <a href="https://htmlacademy.ru/">HTML Academy</a> 2017
       </p>
       </footer>
-      <section class="login-user">
-        <h2>Личный кабинет</h2>
-        <p>Введите свой логин и пароль.</p>
-        <!--форма-->
-        <span>x</span>
+      <section class="login-cite">
+         <h2 class="visually-hidding">Личный кабинет</h2>
+         <label class="visually-hidding" for="login-mail">Электронная почта</label>
+         <input id="login-mail" class="input-login-mail" type="text" name="mail" placeholder="Электронная почта">
+         <label class="visually-hidding" for="login-cite-password">Пароль</label>
+         <input id="login-cite-password" class="input-login-password" type="password" name="password" placeholder="Пароль">
+         <a href="#" alt="Забыли пароль?">Забыли пароль?</a>
+         <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+         <button class="button button-login" type="button" name="Вход">Войти</button>
       </section>
       <section>
           <h2>Обратная связь</h2>
           <span>x</span>
       </section>
       <section class="basket">
-        <ul class="basket-list">
-          <li>Пломбир с апельсиновым джемом</li>
-          <li>Клубничный пломбир с присыпкой из белого шоколада</li>
-          <b>Итог: 750руб</b>
-          <span class="button">Оформить заказ</span>
-
-        </ul>
-
+         <ul class="basket-list">
+            <li>Пломбир с апельсиновым джемом</li>
+            <li>Клубничный пломбир с присыпкой из белого шоколада</li>
+            <b>Итог: 750руб</b>
+         </ul>
+         <button type="button" name="button">Оформить заказ</button>
       </section>
     </main>
   </body>
