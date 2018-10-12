@@ -19,27 +19,9 @@
         <li><a href="#">Контакты</a></li>
       </ul>
       <img src="img\login.svg" width="14" height="14" alt="login">
-      <section>
-         <h2>Вход</h2>
-         <p>Введите пожалуйста свой логин и пароль</p>
-         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-         <p>
-            <label for="user-login-cite visually-hidding" >Логин</label>
-            <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
-         </p>
-         <p>
-            <label for="user-password-cite visually-hidding" >Пароль</label>
-            <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
-          </p>
-          <p>
-            <label class="user-login-remember">
-            <input class="visually-hidding" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
-            Запомни меня</label>
-            <a href="#">Я забыл пароль!</a>
-          </p>
-          <button class="button button-login" type="submit" name="Войти">Войти</button>
-        </form>
-      </section>
+      <div class="login">
+        Вход
+      </div>
     </nav>
    </header>
     <main class="container">
@@ -102,12 +84,12 @@
           </li>
         </ul>
         <a class="button-map" href="#">Как проехать</a>
-        <a class="button-feedback" href="#">Обратная связь</a>
+        <a class="button button-feedback" href="#">Обратная связь</a>
       </section>
       <section class="appointment">
         <h2>Записаться</h2>
         <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <form class="" action="https://echo.htmlacademy.ru" method="post">
+        <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appointment-item">
           <label for="data" class="visually-hidding">Дата</label>
           <input id="data" type="text" name="01.03.2018" placeholder="28.06.2018">
@@ -128,28 +110,52 @@
         </form>
       </section>
     </div>
-      <footer class="mine-footer">
+      <footer class="main-footer">
+        <div class="footer-contacts">
         <p>Барбершоп «Бородинский» <br>
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
              <a href="#">Как нас найти? </a><br>
              Телефон: +7 (812) 666-02-66
         </p>
-        <div class="social">
+      </div>
+      <div class="social">
           <b>Давайте дружить!</b>
           <ul class="social-list">
             <li class="social-item"><a href="#"><img src="img\vk.svg" height="20" width="20" alt="ВКонтакте"></a></li>
             <li class="social-item"><a href="#"><img src="img\facebook.svg" height="20" width="20" alt="Фэйсбук"></a></li>
             <li class="social-item"><a href="#"><img src="img\instagram.svg" height="20" width="20" alt="Фэйсбук"></a></li>
           </ul>
-        </div>
-        <b>Разработано:</b>
+      </div>
+      <div class="developer">
+        <b>Разработано:</b><br>
         <a href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
       </footer>
       </section>
       <section>
         <h2>Как до нас добраться</h2>
         <span>x</span>
       </section>
+      <h2>Вход</h2>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+         <label for="user-login-cite visually-hidding" >Логин</label>
+         <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
+      </p>
+      <p>
+         <label for="user-password-cite visually-hidding" >Пароль</label>
+         <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
+       </p>
+       <p>
+         <label class="user-login-remember">
+         <input class="visually-hidding" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
+         Запомни меня</label>
+         <a href="#">Я забыл пароль!</a>
+       </p>
+       <button class="button button-login" type="submit" name="Войти">Войти</button>
+     </form>
+   </section>
     </main>
   </body>
 </html>

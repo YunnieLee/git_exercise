@@ -98,4 +98,60 @@ a {
 
 .appointment-item input {
   font: inherit;
+  border: 2px solid #000101;
+
+}
+
+.contacts-list {
+  list-style: none;
+}
+
+.main-footer {
+background-color: #232323;
+background-image: url("../img/Layer 1.jpg");
+background-position: 0 0;
+}
+
+.main-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+
+
+}
+
+.main-footer
+.developer a {
+  text-decoration: none;
+  background-color: #000000;
+  padding: 7px;
+  text-align: center;
+
+}
+
+.social-list {
+  list-style: none;
+  text-align: center;
+
+}
+
+.social-list a {
+  background-color: #000000;
+  padding: 7px;
+
+}
+
+.social
+.social-list
+.social-item a:hover,
+.social
+.social-list
+.social-item a:focus {
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+ text-decoration: none;
 }
