@@ -1,9 +1,86 @@
 body {
-  font-size: 15px;
-  font-family: "PT Sans Narrow", Areal, sans-sans-serif;
+  font-family: "PT Sans Narrow", Area, sans-sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
 
+<<<<<<< HEAD
+  background-color: #000000;
+  background-image: url("../img/bg.jpg");
+=======
 
-  background-image: url("img\bg.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: top center;
+>>>>>>> 25e1533a968c41595cfd3ed9676e3b5dc62df1ac
   background-repeat: no-repeat;
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+ font-size: 16px;
+ line-height: 20px;
+ color: #ffffff;
+
+ background-color: #000000;
+
+}
+
+.main-navigation .navigation-list {
+ list-style: none;
+
+}
+
+.navigation-list a {
+  color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.navigation-list a:hover,
+.navigation-list a:focus{
+  background-color: #242424;
+}
+
+.advantages-list {
+  list-style: none;
+  text-align: center;
+}
+
+.advantages
+.advantages-list h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-column {
+  background-color: #f8f5f2;
+  background-image: url("../img/wite_bg.jpg");
+  background-position: 0 0;
+
+
+  color: #000000;
+  text-align: center;
+}
+
+.index-column h2 {
+  font-size: 30px;
+  line-height: 42px;
+
+}
+.news-list {
+  list-style: none;
+}
+.news-item time {
+  text-transform: none;
+}
+
+.gallery-content {
+  border-color: #ffffff;
+  border: 7px solid #ffffff;
 }
