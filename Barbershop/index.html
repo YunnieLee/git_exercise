@@ -3,41 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>Barbershop</title>
-    <link rel="stylesheet" href="css\nirmalize.css">
+    <link rel="stylesheet" href="css\normalize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
     <link rel="stylesheet" href="css\style.css">
   </head>
   <body>
-   <header>
-    <nav class="main-navigation">
-      <a class="main-logo"><img src="img\index-logo.svg" width="371" height="155" alt="логотип Барбершоп"></a>
-      <ul class="navigation-list">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Прайс-лист</a></li>
-        <li><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <img src="img\login.svg" width="14" height="14" alt="login">
-      <div class="login">
-        Вход
-      </div>
-    </nav>
+   <header class="main-header">
+    <nav class="site-navigation">
+         <a class="main-header-logo"><img src="img\index-logo.svg" width="371" height="155" alt="логотип Барбершоп"></a>
+            <div class="main-navigation-wrapper">
+              <div class="container">
+                 <ul class="navigation-list">
+                    <li><a href="#">Информация</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакты</a></li>
+                 </ul>
+
+                 <ul class="user-navigation">
+                    <li><img src="img\login.svg" width="14" height="14" alt="login"></li>
+                     <li>Вход</li>
+                </ul>
+              </div>
+            </div>
+   </nav>
    </header>
     <main class="container">
       <h1 class="visually-hidding">Барбершоп "Бородинский"</h1>
       <section class="advantages">
         <h2 class="visually-hidding">Приемущества</h2>
         <ul class="advantages-list">
-          <li>
+          <li class="advantages-item">
             <h3>Быстро</h3>
             <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
           </li>
-          <li>
+          <li  class="advantages-item">
             <h3>Круто</h3>
             <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
           </li>
-          <li>
+          <li  class="advantages-item">
             <h3>Дорого</h3>
             <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
           </li>
@@ -111,6 +116,7 @@
       </section>
     </div>
       <footer class="main-footer">
+        <div class="container">
         <div class="footer-contacts">
         <p>Барбершоп «Бородинский» <br>
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
@@ -129,6 +135,7 @@
       <div class="developer">
         <b>Разработано:</b><br>
         <a href="https://htmlacademy.ru/">HTML Academy</a>
+      </div>
       </div>
       </footer>
       </section>
