@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
 
+
 <<<<<<< HEAD
   background-color: #000000;
   background-image: url("../img/bg.jpg");
@@ -29,6 +30,7 @@ body {
 }
 
 
+
 a {
   text-decoration: none;
 }
@@ -43,7 +45,9 @@ a {
   background-color: #000000;
 
 }
-
+.main-header {
+  margin-bottom: 75px;
+}
 .site-navigation {
  display:flex;
  flex-direction:column;
@@ -57,11 +61,13 @@ a {
 
 }
 
+
 .main-header-logo {
   order: 2;
-  width: 199px;
-  height:155px;
+  width: 368px;
+  height:153px;
 }
+
 
 .main-navigation-wrapper {
   width: 100%;
@@ -79,27 +85,15 @@ a {
   margin: 0;
 
   list-style: none;
-  min-height: 70px;
+
 }
 
 
-.navigation-list li, .user-navigation li {
-    display: inline-flex;
-    padding: 24px;
-}
 
 .user-navigation {
   margin:  0;
   padding: 0;
   list-style: none;
-}
-
-.user-navigation li:first-child {
-    padding-right: 5px;
-}
-
-.user-navigation li:nth-child(2) {
-    padding-left: 5px;
 }
 
 
@@ -127,7 +121,7 @@ a {
   justify-content: space-between;
   min-height: 170px;
   list-style: none;
-  text-align: center;
+
 }
 
 .advantages{
@@ -143,7 +137,7 @@ a {
 .advantages-item {
 
   width: 300px;
-  min-height: 170px;
+
 }
 
 .index-column {
@@ -205,6 +199,8 @@ a {
 }
 
 .contacts-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -221,8 +217,8 @@ a {
 }
 
 .footer-contacts {
-  width:320
-  margin:0;
+  width:320;
+  margin: 0;
   margin-right: 80px;
 
 }
@@ -278,4 +274,216 @@ a {
 .footer-contacts a:hover,
 .footer-contacts a:focus {
  text-decoration: none;
+}
+
+/*Catalog.css*/
+
+.inner-page {
+  color: #000000;
+
+  background-color: #f9f6f3;
+  background-image: url("../img/wite_bg.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.inner-page .main-header {
+
+  margin-bottom: 50px;
+  background-color: #000000;
+
+  justify-content: flex-start;
+}
+
+  .inner-page .header-logo {
+  width: 111;
+  height: 24;
+  padding: 23px 20px;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.inner-page .navigation-list {
+  list-style: none;
+}
+
+.navigation-list a {
+  color: white;
+}
+
+.user-navigation{
+  margin-left: auto;
+  list-style: none;
+}
+
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.inner-page .main-navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff !important;
+
+
+}
+
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 300px;
+  height: 19px;
+  margin-bottom: 50px;
+}
+
+.breadcrumbs li {
+      list-style: none;
+
+}
+
+.filter {
+  margin: 0;
+  padding: 0;
+  width: 180px;
+
+}
+
+.catalog {
+  width: 700px;
+
+
+}
+
+.catalog-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+display: flex;
+padding: 0;
+margin: 0;
+list-style: none;
+flex-wrap: wrap;
+
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right:20px;
+}
+  .catalog-item:nth-child(3n){
+  margin-right: 0;
+
+}
+
+.filter-list {
+      list-style: none;
+
+}
+
+.brand {
+  border: 0;
+}
+
+
+.product-group {
+  list-style: none;
+
+}
+
+.product-group-filter {
+  border: 0px;
+}
+
+
+
+.inner-page .pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 193px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.inner-page .main-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+}
+
+
+/*.navigation-list li, .user-navigation li {
+    display: inline-flex;
+    padding: 24px;
+
+}
+*/
+/* Card product */
+
+.container{
+
+}
+
+.page-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+
+  }
+
+
+.catalog-column{
+
+}
+
+.product-photo{
+  width: 460px;
+  height: 498px;
+  margin-right: 90px;
+}
+
+.product-photo-list{
+  list-style: none;
+}
+
+.product-info{
+  width: 400px;
+  height: 498px;
+}
+
+.product-list{
+  list-style: none;
 }
