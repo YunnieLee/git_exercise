@@ -3,55 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css\style.css">
   </head>
-  <body>
-    <header class="mine-header">
-    <nav class="mine-navigation">
-      <a class="logo" href="index.html"><img src="img\logo.svg" width="50" height="50" alt="логотип Барбершоп"></a>
-      <ul class="cite-navigation">
-        <li><a href="#">Информация</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Прайс-лист</a></li>
-        <li class="cite-navigation-current"><a href="#">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-      <img src="img\login.svg" width="14" height="14" alt="login">
-      <section>
-         <h2>Вход</h2>
-         <p>Введите пожалуйста свой логин и пароль</p>
-         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-         <p>
-            <label for="user-login-cite visually-hidding" >Логин</label>
-            <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
-         </p>
-         <p>
-            <label for="user-password-cite visually-hidding" >Пароль</label>
-            <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
-          </p>
-          <p>
-            <label class="user-login-remember">
-            <input class="visually-hidding" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
-            Запомни меня</label>
-            <a href="#">Я забыл пароль!</a>
-          </p>
-          <button class="button-login" type="submit" name="Войти">Войти</button>
-        </form>
-      </section>
+  <body class="inner-page">
+    <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="header-logo" href="index.html"><img src="img\logo.svg" width="111" height="24" alt="логотип Барбершоп"></a>
+           <ul class="navigation-list">
+              <li><a href="#">Информация</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Магазин</a></li>
+              <li><a href="#">Контакты</a></li>
+           </ul>
+           <ul class="user-navigation">
+             <li>Вход</li>
+          </ul>
     </nav>
     </header>
     <main class="container">
-      <h1>Средства для ухода</h1>
+      <h1 class="page-title">Средства для ухода</h1>
         <ul class="breadcrumbs">
           <li><a href="#">Главная</a></li>
           <li><a href="#">Магазин</a></li>
           <li class="breadcrumbs-current">Средства по уходу</li>
         </ul>
+      <div class="catalog-column">
       <section class="filter">
         <h2 class="visually-hidding">Фильтры</h2>
         <form class="filters" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
+        <fieldset class="brand">
         <Legend>Производители</Legend>
-        <ul class="filter-list">
+        <ul class="filters-list">
           <li class="filter-options">
              <label for="Baxter">
              <input class="visually-hidding" id="Baxter" type="checkbox" name="Baxter of California" checked>
@@ -84,9 +69,9 @@
           </li>
         </ul>
       </fildset>
-      <fieldset>
-        <Legend>Группы товаров:</legend>
-          <ul>
+      <fieldset class="product-group-filter">
+        <Legend >Группы товаров:</legend>
+          <ul class="product-group">
             <li>
               <input id="filter-shave" class="visually-hidding filter-input filter-input-radio" type="radio" name="product-gruop" value="shaving">
              <label for="filter-shave">Бритвенные принадлежности</label>
@@ -104,7 +89,7 @@
       </fieldset>
     </form>
    </section>
-      <section>
+      <section class="catalog">
         <h2 class="visually-hidding">Список товаров</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
@@ -202,7 +187,8 @@
           <li class="pagination-item"><a href="#">4</a></li>
         </ul>
       </section>
-      <footer class="mine-footer">
+      </div>
+      <footer class="main-footer">
         <p>Барбершоп «Бородинский» <br>
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
              <a href="#">Как нас найти? </a><br>
@@ -222,9 +208,28 @@
       <section>
         <h2>Как до нас добраться</h2>
         <span>x</span>
-
       </section>
     </main>
-
+    <section>
+       <h2>Вход</h2>
+       <p>Введите пожалуйста свой логин и пароль</p>
+       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+       <p>
+          <label for="user-login-cite visually-hidding" >Логин</label>
+          <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
+       </p>
+       <p>
+          <label for="user-password-cite visually-hidding" >Пароль</label>
+          <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
+        </p>
+        <p>
+          <label class="user-login-remember">
+          <input class="visually-hidding" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
+          Запомни меня</label>
+          <a href="#">Я забыл пароль!</a>
+        </p>
+        <button class="button-login" type="submit" name="Войти">Войти</button>
+      </form>
+    </section>
   </body>
 </html>
