@@ -3,33 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>Barbershop</title>
+    <link rel="stylesheet" href="css\normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css\style.css">
   </head>
-  <body>
-    <header class="mine-header">
-    <nav class="mine-navigation">
-      <a class="logo" href="index.html"><img src="img\logo.svg" width="50" height="50" alt="логотип Барбершоп"></a>
-      <ul class="cite-navigation">
+  <body class="inner-page">
+    <header class="main-header">
+    <nav class="main-navigation container">
+      <a class="header-logo" href="index.html"><img src="img\logo.svg" width="111" height="24" alt="логотип Барбершоп"></a>
+           <ul class="navigation-list">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Новости</a></li>
         <li><a href="#">Прайс-лист</a></li>
         <li class="cite-navigation-current"><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <img src="img\login.svg" width="14" height="14" alt="login">
-      <ul class="user-login">
+      <ul class="user-navigation">
         <li>Вход</li>
-        <!--форма-->
-      </ul>
-    </nav>
+     </ul>
+ </nav>
   </header>
-  <main>
-    <h1>Набор для путешествий «Baxter of California»</h1>
+  <main class="container">
+    <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item"><a href="">Главная</a></li>
       <li class="breadcrumbs-item"><a href="">Магазин</a></li>
       <li class="breadcrumbs-item"><a href="">Средства для ухода</a></li>
       <li class="breadcrumbs-item-current">Набор для путешествий «Baxter of California»</li>
     </ul>
+      <div class="catalog-column">
     <section class="product-photo">
       <h2 class="visually-hidding">Изображение товара</h2>
       <p>
@@ -62,26 +64,21 @@
         <li class="product-item">Крем после бритья, шампунь (50 мл)</li>
         <li class="product-item">Удобная кожаная косметичка</li>
       </ul>
+    </div>
    </section>
-   <footer class="mine-footer">
+   <footer class="main-footer">
      <p>Барбершоп «Бородинский» <br>
         Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти? </a><br>
           Телефон: +7 (812) 666-02-66
      </p>
      <div class="social">
-     <b>Давайте дружить!</b>
-     <ul class="social-list">
-         <li class="social-item">
-             <a href="#"><img src="img\vk.svg" height="20" width="20" alt="ВКонтакте"></a>
-         </li>
-         <li class="social-item">
-             <a href="#"><img src="img\facebook.svg" height="20" width="20" alt="Фэйсбук"></a>
-         </li>
-         <li class="social-item">
-             <a href="#"><img src="img\instagram.svg" height="20" width="20" alt="Фэйсбук"></a>
-         </li>
-     </ul>
+       <b>Давайте дружить!</b>
+       <ul class="social-list">
+         <li class="social-item"><a href="#"><img src="img\vk.svg" height="20" width="20" alt="ВКонтакте"></a></li>
+         <li class="social-item"><a href="#"><img src="img\facebook.svg" height="20" width="20" alt="Фэйсбук"></a></li>
+         <li class="social-item"><a href="#"><img src="img\instagram.svg" height="20" width="20" alt="Фэйсбук"></a></li>
+       </ul>
      </div>
      <b>Разработано:</b>
      <a href="https://htmlacademy.ru/">HTML Academy</a>
