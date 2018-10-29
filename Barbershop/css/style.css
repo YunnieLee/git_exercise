@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans Narrow", Area, sans-sans-serif;
+  font-family: "PT Sans Narrow", Area, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
@@ -9,17 +9,11 @@ body {
   padding: 0;
 
 
-<<<<<<< HEAD
+
   background-color: #000000;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: 1372px: auto;
-=======
-
-  background-image: url("../img/bg.jpg");
-  background-position: top center;
->>>>>>> 25e1533a968c41595cfd3ed9676e3b5dc62df1ac
-  background-repeat: no-repeat;
   background-position: top center;
 }
 
