@@ -417,18 +417,6 @@ ul.contacts-list p {
 
 }
 
-.developer b {
-    display: block;
-    margin-left: 9px;
-
-}
-
-.developer .button:hover,
-.developer .button:focus {
-  color: #000000;
-  background-color: #ffffff;
-}
-
 
 .social-list {
   margin: 0;
