@@ -10,10 +10,11 @@ body {
 
 
 
+
+
   background-color: #000000;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-size: 1372px: auto;
   background-position: top center;
 }
 
@@ -388,7 +389,7 @@ ul.contacts-list p {
 }
 
 .footer-contacts {
-  width:320;
+  width:320px;
   margin: 0;
   margin-right: 80px;
 
@@ -493,9 +494,8 @@ ul.contacts-list p {
 }
 
   .inner-page .header-logo {
-  width: 111;
-  height: 24;
-  padding: 23px 20px;
+
+  padding: 19px 25px 0px 20px;
 
 }
 
@@ -520,6 +520,7 @@ a {
 
 .button {
   font: inherit;
+  line-height: 18px;
 
   text-align: center;
   color: #ffffff;
@@ -528,6 +529,8 @@ a {
 
   background-color: #000000;
   border: none;
+
+  padding: 12px 16px;
 }
 
 .button:hover,
@@ -551,6 +554,8 @@ a {
 
 .breadcrumbs {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   width: 300px;
@@ -558,9 +563,40 @@ a {
   margin-bottom: 50px;
 }
 
-.breadcrumbs li {
-      list-style: none;
+.breadcrumbs a {
+  text-decoration: none;
+  color: black;
+}
 
+.breadcrumbs li {
+  position: relative;
+  list-style: none;
+  margin-right: 42px;
+}
+
+.breadcrumbs li:last-child{
+  margin: 0;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+
+.breadcrumbs a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  right: -25px;
+  top: 7px;
+  background: black;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .filter {
@@ -568,6 +604,121 @@ a {
   padding: 0;
   width: 180px;
 
+}
+
+form.filters legend {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+
+.filters fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .filters fieldset ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 30px;
+    line-height: 18px;
+    list-style: none;
+  }
+
+ .filter-options {
+
+   margin-bottom: 20px;
+
+   padding-left: 45px;
+ }
+
+ .filter-options label {
+   position: relative;
+
+   display: block;
+   cursor: pointer;
+   user-select: none;
+   z-index: 1;
+
+
+ }
+
+ .filter-input-radio:checked +label::after {
+     content: "";
+     position: absolute;
+     width: 8px;
+     height: 8px;
+     top: 4px;
+     left: -29px;
+     border-radius: 50%;
+     background-color: black;
+ }
+
+ .filter-input-radio + label::before {
+   content: "";
+   display: block;
+   position: absolute;
+
+   top: -2px;
+   left: -35px;
+
+   width: 16px;
+   height: 16px;
+
+   border: 2px solid black;
+   border-radius: 50%;
+
+ }
+
+ .filter-input:disabled + label {
+   color: #000000;
+   opacity: 0.5;
+ }
+
+.filter-input:disabled {
+  color: #000000;
+  opacity: 0.5;
+}
+
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: -31px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+    z-index: 2;
+    top: 1px;
+    left: -35px;
+}
+
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
 }
 
 .catalog {
@@ -590,10 +741,26 @@ flex-wrap: wrap;
 
 }
 
+.catalog-item h3{
+
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-item a{
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-item {
   width: 220px;
   margin-bottom: 20px;
   margin-right:20px;
+
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+
 }
   .catalog-item:nth-child(3n){
   margin-right: 0;
