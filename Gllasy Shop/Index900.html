@@ -8,45 +8,51 @@
     <link rel="stylesheet" href="css\style.css">
  </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <img class="main-logo" src="img/logo.svg" width="154" height="64" alt="Logo">
     <nav class="navigation-cite">
        <div class="navigation-wrapper">
           <a href="#">Каталог</a>
-              <ul class="navigation-list">
+              <ul class="navigation-list ">
                  <li class="navigation-item">
                    <div>
                       <a href="#">Каталог</a>
                    <div>
-                   <ul>
-                       <li class="navigation-item"><a href="#">Новинки</a></li>
-                       <li class="navigation-item"><a href="#">Сливочное</a></li>
-                       <li class="navigation-item"><a href="#">Щербеты</a></li>
-                       <li class="navigation-item"><a href="#">Фруктовый лед</a></li>
-                       <li class="navigation-item"><a href="#">Мелорин</a></li>
+                   <ul class="drop-down-menu">
+                       <li class=""><a href="#">Новинки</a></li>
+                       <li class=""><a href="#">Сливочное</a></li>
+                       <li class=""><a href="#">Щербеты</a></li>
+                       <li class=""><a href="#">Фруктовый лед</a></li>
+                       <li class=""><a href="#">Мелорин</a></li>
                    </ul>
                  </div>
                  </div>
-                </li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+              </li>
+          <li class="navigation-item"><a href="#">Доставка и оплата</a></li>
+          <li class="navigation-item"><a href="#">О Компании</a></li>
        </ul>
       </div>
-       <label сlass="visually-hidding" for="search">Поиск</label>
-       <input id="search" class="search" type="search" name="search" placeholder="Поиск">
-       <img src="img\search.svg" alt="Поиск">
-       <a class="navigation-user" href="#">Вход</a>
-       <a class="navigation-user-bay" href="#"><img src="img\basket.svg" alt="Корзина"> Корзина</a>
+      <div class="navigation-user-wrapper">
+       <label сlass="search" for="search"><img src="img/Search.svg" height="18px" width="18px" alt="Поиск">
+        </label>
+       <input id="search" class="search-input visually-hidden" type="search" name="search" placeholder="Поиск">
+    <!--   <img src="img\search.svg" alt="Поиск">-->
+       <a class="navigation-user login-link" href="#">Вход</a>
+     <a class="navigation-user-bay" href="#">Пусто</a>
+     </div>
     </nav>
-      <p>C 10 до 20, ежедневно</p>
-      <p>8 812 450-25-25</p>
+    <div class="contacts-wrapper">
+        <p>C 10 до 20, ежедневно</p>
+        <p>8 812 450-25-25</p>
+
+    </div>
     </header>
     <main class="container">
-       <h1 class="visually-hidding">Магазин мороженного Gllasy Shop</h1>
+       <h1 class="visually-hidden">Магазин мороженного Gllasy Shop</h1>
        <section class="slider-wrapper">
           <div id="slider">
              <div class="slider">
-                <img src="img\ice cream1.png" width="647" height="584" alt="Шоколадный пломбир и лимонный сорбет">
+                <img src="img\ice cream1.png" width="730px" height="656px" alt="Шоколадный пломбир и лимонный сорбет">
              </div>
              <p>Крем-брюле и пломбир с малиновым джемом</p>
              <div class="slider">
@@ -59,20 +65,20 @@
              </div>
              <ul>
                 <li>
-                   <button class="button-slider visually-hidding"  type="radio" name="btn-slider ">Первый слайд</button>
+                   <button class="button-slider visually-hidden"  type="radio" name="btn-slider ">Первый слайд</button>
                 </li>
                 <li>
-                   <button class="button-slider visually-hidding" type="radio" name="btn-slider">Второй слайд</button>
+                   <button class="button-slider visually-hidden" type="radio" name="btn-slider">Второй слайд</button>
                 </li>
                 <li>
-                   <button class="button-slider visually-hidding" type="button" name="btn-slider">Третий слайд</button>
+                   <button class="button-slider visually-hidden" type="button" name="btn-slider">Третий слайд</button>
                 </li>
 
              </ul>
 
     <button class="button" type="button" name="button">Давайте оба!</button>
     <section class="sale">
-       <h2 class="visually-hidding">Выгодные предложения</h2>
+       <h2 class="visually-hidden">Выгодные предложения</h2>
        <div class="sale-wrapper">
           <ul class="sale-list">
              <li>
@@ -136,7 +142,7 @@
     </section>
     <section class="advantage">
       <div class="inner-advantage border">
-          <h2 class="visually-hidding">Приемущества</h2>
+          <h2 class="visually-hidden">Приемущества</h2>
           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороже</h3>
 
           <ul class="advantage-list">
@@ -166,7 +172,7 @@
     </section>
     <div class="wrapper-content">
     <article class="border blog">
-      <h2 class="visually-hidding">Новое в нашем блоге</h2>
+      <h2 class="visually-hidden">Новое в нашем блоге</h2>
       <p>
          <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </p>
@@ -184,7 +190,7 @@
 
       </div>
     <section class="contacts">
-      <h2 class="visually-hidding">Как нас найти</h2>
+      <h2 class="visually-hidden">Как нас найти</h2>
       <img src="img\ICreame.png" width="80" height="140" alt="Курсор">
       <div class="background-contacts">
       <p>Адрес главного офиса<br>
@@ -232,10 +238,10 @@
        </div>
     </footer>
     <section class="login-cite">
-       <h2 class="visually-hidding">Личный кабинет</h2>
-       <label class="visually-hidding" for="login-mail">Электронная почта</label>
+       <h2 class="visually-hidden">Личный кабинет</h2>
+       <label class="visually-hidden" for="login-mail">Электронная почта</label>
        <input id="login-mail" class="input-login-mail" type="text" name="mail" placeholder="Электронная почта">
-       <label class="visually-hidding" for="login-cite-password">Пароль</label>
+       <label class="visually-hidden" for="login-cite-password">Пароль</label>
        <input id="login-cite-password" class="input-login-password" type="password" name="password" placeholder="Пароль">
        <a href="#" alt="Забыли пароль?">Забыли пароль?</a>
        <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
@@ -244,16 +250,16 @@
     <section>
         <form class="Feedback" action="https://echo.htmlacademy.ru" method="get">
             <h2>Мы обязательно вам ответим!</h2>
-            <label class="visually-hidding">Ваше имя?
+            <label class="visually-hidden">Ваше имя?
                <input class="Feedback-name" type="text" name="user-name" value="" placeholder="Как вас зовут?">
             </label><br>
-            <label class="visually-hidding">Ваша почта для ответа?
+            <label class="visually-hidden">Ваша почта для ответа?
                <input class="Feedback-mail" type="text" name="mail" value="" placeholder="Ваша почта для ответа?">
             </label><br>
-            <label class="visually-hidding" for="Feedback-comments">Ваш комментарий...
+            <label class="visually-hidden" for="Feedback-comments">Ваш комментарий...
                 <textarea id="Feedback-comments" name="comments" rows="8" cols="40" placeholder="Напишите что-нибудь..."></textarea>
             </label>
-            <button class="button-close visually-hidding" type="button" name="close">X</button>
+            <button class="button-close visually-hidden" type="button" name="close">X</button>
         </form>
     </section>
   </main>
