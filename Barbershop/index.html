@@ -157,29 +157,34 @@
     </div>
     </footer>
     </section>
-    <section>
-      <h2>Как до нас добраться</h2>
-      <span>x</span>
-    </section>
-    <h2>Вход</h2>
-    <p>Введите пожалуйста свой логин и пароль</p>
+    <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
     <p>
-       <label for="user-login-cite visually-hidden" >Логин</label>
+       <label class="visually-hidden" for="user-login-cite">Логин</label>
        <input class="login-icon-user" id="user-login-cite" type="text" name="login" placeholder="Логин">
     </p>
     <p>
-       <label for="user-password-cite visually-hidden" >Пароль</label>
+       <label class="visually-hidden" for="user-password-cite">Пароль</label>
        <input class="login-icon-password" id="user-password-cite" type="password" name="login" placeholder="Пароль">
      </p>
-     <p>
-       <label class="user-login-remember">
-       <input class="visually-hidden" type="checkbox" name="Запомни меня" value="Запомни меня" checked >
+     <p class="login-help">
+       <label class="login-checkbox">
+       <input class="visually-hidden" type="checkbox" name="remember" value="Запомни меня" checked >
+       <span class="checkbox-indikator"></span>
        Запомни меня</label>
-       <a href="#">Я забыл пароль!</a>
+       <a class="restore" href="#">Я забыл пароль!</a>
      </p>
      <button class="button button-login" type="submit" name="Войти">Войти</button>
    </form>
+   <button class="modal-close" type="button" name="button">Закрыть</button>
  </section>
+ <section class="modal modal-map">
+   <h2 class="visually-hidden">Как до нас добраться</h2>
+   <p><img src="img/map.png" alt="Офис компании: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ 19/8." width="766" height="561"> </p>
+   <button class="modal-close" type="button" name="close"></button>
+ </section>
+ <div class="modal-overlay"></div>
   </body>
 </html>
