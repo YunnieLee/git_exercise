@@ -8,37 +8,40 @@
     <link rel="stylesheet" href="css\style.css">
  </head>
   <body>
-    <header class="main-header container">
+    <header class="main-header catalog-header container">
       <img class="main-logo" src="img/logo.svg" width="154" height="64" alt="Logo">
     <nav class="navigation-cite">
        <div class="navigation-wrapper">
-          <a href="#">Каталог</a>
-              <ul class="navigation-list ">
-                 <li class="navigation-item">
-                   <div>
-                      <a href="#">Каталог</a>
-                   <div>
-                   <ul class="drop-down-menu">
-                       <li class=""><a href="#">Новинки</a></li>
-                       <li class=""><a href="#">Сливочное</a></li>
-                       <li class=""><a href="#">Щербеты</a></li>
-                       <li class=""><a href="#">Фруктовый лед</a></li>
-                       <li class=""><a href="#">Мелорин</a></li>
-                   </ul>
-                 </div>
-                 </div>
-              </li>
+         <ul class="navigation-list ">
+          <li class="navigation-item">
+          <a class="catalog-link" href="#">Каталог</a>
+          <ul class="drop-down-menu">
+              <li class=""><a href="#">Новинки</a></li>
+              <li class=""><a href="#">Сливочное</a></li>
+              <li class=""><a href="#">Щербеты</a></li>
+              <li class=""><a href="#">Фруктовый лед</a></li>
+              <li class=""><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
           <li class="navigation-item"><a href="#">Доставка и оплата</a></li>
           <li class="navigation-item"><a href="#">О Компании</a></li>
        </ul>
       </div>
       <div class="navigation-user-wrapper">
-       <label сlass="search" for="search">
-         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-        </label>
-       <input id="search" class="search-input visually-hidden" type="search" name="search" placeholder="Что ищем?">
-         <a class="navigation-user login-link" href="#">Вход</a>
-        <a class="navigation-user-bay" href="#">Пусто</a>
+        <div class="search-wrapper">
+      <div class="search-icon">
+           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+      </div>
+         <div class="search-form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="lebel-search" for="search">
+              <input id="search" class="search-input " type="search" name="search" placeholder="Что ищем?">
+              </label>
+            </form>
+        </div>
+     </div>
+     <a class="navigation-user login-link" href="#">Вход</a>
+     <a class="navigation-user-bay" href="#">Пусто</a>
      </div>
     </nav>
     <div class="contacts-wrapper">
@@ -310,30 +313,46 @@
        </p>
        </div>
     </footer>
-    <section class="login-cite">
+    <section class="modal modal-login">
        <h2 class="visually-hidden">Личный кабинет</h2>
-       <label class="visually-hidden" for="login-mail">Электронная почта</label>
-       <input id="login-mail" class="input-login-mail" type="text" name="mail" placeholder="Электронная почта">
-       <label class="visually-hidden" for="login-cite-password">Пароль</label>
-       <input id="login-cite-password" class="input-login-password" type="password" name="password" placeholder="Пароль">
-       <a href="#" alt="Забыли пароль?">Забыли пароль?</a>
-       <a href="#" aria-label="Новая регистрация">Новая регистрация</a>
+       <form class="login-form" action="index.html" method="post">
+         <p>
+             <label class="visually-hidden" for="login-mail">Электронная почта</label>
+             <input id="login-mail" class="input-login-mail" type="text" name="mail" placeholder="Электронная почта">
+       </p>
+       <p>
+           <label class="visually-hidden" for="login-cite-password">Пароль</label>
+           <input id="login-cite-password" class="input-login-password" type="password" name="password" placeholder="Пароль">
+       </p>
+       <div class="help-wrapper">
        <button class="button button-login" type="button" name="Вход">Войти</button>
-    </section>
-    <section>
-        <form class="Feedback" action="https://echo.htmlacademy.ru" method="get">
-            <h2>Мы обязательно вам ответим!</h2>
-            <label class="visually-hidden">Ваше имя?
-               <input class="Feedback-name" type="text" name="user-name" value="" placeholder="Как вас зовут?">
-            </label><br>
-            <label class="visually-hidden">Ваша почта для ответа?
-               <input class="Feedback-mail" type="text" name="mail" value="" placeholder="Ваша почта для ответа?">
-            </label><br>
-            <label class="visually-hidden" for="Feedback-comments">Ваш комментарий...
-                <textarea id="Feedback-comments" name="comments" rows="8" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-            </label>
-            <button class="button-close visually-hidden" type="button" name="close">X</button>
+       <p class="login-help">
+           <a class="remember" href="#" alt="Забыли пароль?">Забыли пароль?</a>
+           <a class="registration" href="#" aria-label="Новая регистрация">Новая регистрация</a>
+       </p>
+       </div>
         </form>
+    </section>
+   <div class="modal-wrapper-overflow">
+    <section class="modal-feedback">
+        <form class="Feedback" action="https://echo.htmlacademy.ru" method="post">
+            <h2>Мы обязательно вам ответим!</h2>
+            <button class="button-close " type="button" name="close"></button>
+            <p>
+               <label for="user-name" class="visually-hidden">Ваше имя?</label>
+               <input class="Feedback-name" type="text" id="user-name"  placeholder="Как вас зовут?">
+            </p>
+            <p>
+               <label for="mail-Feedback" class="visually-hidden">Ваша почта для ответа?</label>
+               <input class="Feedback-mail" type="text" id="mail-Feedback" placeholder="Ваша почта для ответа?">
+            </p>
+            <p>
+                <label class="visually-hidden" for="Feedback-comments">Ваш комментарий...</label>
+                <textarea id="Feedback-comments" name="comments" rows="8" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+            </p>
+            <button class="button button-send" type="button" name="send">Отправить</button>
+        </form>
+      </div>
     </section>
  </body>
 </html>
